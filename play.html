@@ -42,7 +42,7 @@
           if (!channel || !channel.link) {
             document.getElementById('message').innerText = 'Stream not found for the provided ID.';
           } else {
-            const playerUrl = `https://anym3u8player.com/ultimate-player-generator/player.php?player=mediaelement&url=${encodeURIComponent(channel.link)}&autoplay=1&controls=auto&theme=default&logo=1&logo_url=https%3A%2F%2Ftvs6.github.io%2Flivetv%2Fimg%2Flogo1.png&logo_pos=top-left&logo_opacity=0.6&logo_width=100&buffer=30&quality=1&speed=1&pip=1&fullscreen=1&no_download=1&width=responsive&aspect=16%3A9`;
+            const playerUrl = `https://anym3u8player.com/tv/video-player.php?url=${encodeURIComponent(channel.link)}`;
             const iframe = document.createElement('iframe');
             iframe.src = playerUrl;
             document.getElementById('player-container').innerHTML = '';
